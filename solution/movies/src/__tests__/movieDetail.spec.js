@@ -1,14 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import movieDetail from "./movieDetail.js";
 
 import sinon from "sinon";
 import Enzyme, { shallow, configure } from "enzyme";
 import renderer from "react-test-renderer";
 import Adapter from "enzyme-adapter-react-16";
-import MovieDetail from "./movieDetail.js";
-configure({ adapter: new Adapter() });
+import MovieDetail from "../movieDetail/movieDetail.js";
 
+configure({ adapter: new Adapter() });
 describe("movieDetail.js", () => {
   it("rendering without crushing", () => {
     const div = document.createElement("div");
