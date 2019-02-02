@@ -11,7 +11,11 @@
     flex-direction: column;
     align-items: center;
     button {
-      width: 20%;
+      @media (max-width: 400px) {
+        width: 250px;
+      }
+
+      width: 300px;
       height: 40px;
       margin: 5px;
       font-weight: bold;
@@ -21,17 +25,32 @@
       }
     }
     input {
-      width: 20%;
-      height: 40px;
+      @media (max-width: 400px) {
+        width: 250px;
+      }
+      width: 300px;
+      height: 30px;
       margin: 5px;
       font-weight: bold;
       font-size: 20px;
     }
   }
   .all-movies {
+    @media (max-width: 400px) {
+      margin-left: 40px;
+    }
+    @media (max-width: 1379px) {
+      margin-left: 15%;
+    }
     display: flex;
     flex-wrap: wrap;
+
     .movie-card {
+      @media (max-width: 400px) {
+        width: 70%;
+        margin-left: 10px;
+      }
+
       background: khaki;
       display: flex;
       flex-direction: column;
@@ -46,6 +65,10 @@
     }
   }
   .movie-detail {
+    @media (max-width: 400px) {
+      width: 70%;
+    }
+
     width: 30%;
     background: khaki;
     padding-bottom: 5%;
