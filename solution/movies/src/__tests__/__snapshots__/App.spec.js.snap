@@ -9,7 +9,7 @@ exports[`<app/> create  snapshot 1`] = `
       className="nav-bar"
     >
       <h1>
-         Welcome to Movies guide 
+         ** Welcome To The Movies Guide ** 
       </h1>
       <button
         onClick={[Function]}
