@@ -52,7 +52,7 @@ class AllMovies extends Component {
     return (
       <div>
         <div className="nav-bar">
-          <h1> Welcome to Movies guide </h1>
+          <h1> ** Welcome To The Movies Guide ** </h1>
           <button
             onClick={() => {
               this.setState({
