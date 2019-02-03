@@ -5,16 +5,8 @@ const fetchPopularMovies = async () => {
   const promise = await Promise.all([
     axios.get(`${baseURL}${keys.keys.API_KEY}&language=en-US`),
     axios.get(`${baseURL}${keys.keys.API_KEY}&language=en-US`),
-    axios.get(
-      `https://api.themoviedb.org/3/movie/top_rated?api_key=${
-        keys.keys.API_KEY
-      }&language=en-US`
-    ),
-    axios.get(
-      `https://api.themoviedb.org/3/movie/popular?api_key=${
-        keys.keys.API_KEY
-      }&language=en-US&page=900`
-    )
+    axios.get(`${baseURL}${keys.keys.API_KEY}&language=en-US`),
+    axios.get(`${baseURL}${keys.keys.API_KEY}&language=en-US&page=900`)
   ]);
 
   const data1 = await promise[0].data.results;
